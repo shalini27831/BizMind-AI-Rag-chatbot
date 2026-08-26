@@ -1,3 +1,5 @@
+My App Link : "https://bizmind-ai-rag-chatbot-4phuu7rhcplzmr3smwtttm.streamlit.app/"
+
 # 📚 BizMind AI — Business Knowledge RAG Chatbot
 
 An AI-powered Retrieval-Augmented Generation (RAG) chatbot that allows users to ask questions about a Business Knowledge Manual and receive document-grounded answers with source and page citations.
@@ -52,4 +54,4 @@ This helps the chatbot provide answers based on the organization's knowledge bas
                            ▼
                          User
 
-My App link : "https://bizmind-ai-rag-chatbot-4phuu7rhcplzmr3smwtttm.streamlit.app/"
+
