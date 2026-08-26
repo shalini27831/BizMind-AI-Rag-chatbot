@@ -89,7 +89,7 @@ st.set_page_config(
     page_title="Business Knowledge Assistant",
     page_icon="bizmind_avatar.png",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="collapsed"
 )
 
 
@@ -113,7 +113,9 @@ st.markdown("""
 footer {
     visibility: hidden;
 }
-
+header {
+    visibility: hidden;
+}
 html, body, .stApp, [class*="css"] {
     font-family: 'Inter', sans-serif;
 }
