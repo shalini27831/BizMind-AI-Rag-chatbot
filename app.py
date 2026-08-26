@@ -87,9 +87,9 @@ BIZMIND_ICON_B64 = get_base64_image("bizmind_avatar.png")
 
 st.set_page_config(
     page_title="Business Knowledge Assistant",
-    page_icon="assets/bizmind_avatar.png",
+    page_icon="bizmind_avatar.png",
     layout="wide",
-    initial_sidebar_state="collapsed"
+    initial_sidebar_state="expanded"
 )
 
 
