@@ -113,7 +113,17 @@ st.markdown("""
 footer {
     visibility: hidden;
 }
+header {
+    background: transparent !important;
+}
 
+[data-testid="stHeader"] {
+    background: transparent !important;
+}
+
+[data-testid="stToolbar"] {
+    background: transparent !important;
+}
 html, body, .stApp, [class*="css"] {
     font-family: 'Inter', sans-serif;
 }
