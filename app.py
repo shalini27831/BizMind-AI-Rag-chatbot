@@ -361,27 +361,96 @@ div.stButton > button:hover {
 /* ==============================
    CHAT INPUT
    ============================== */
+/* ==============================
+   CHAT INPUT - BIZMIND STYLE
+   ============================== */
 
 [data-testid="stChatInput"] {
-    border-radius: 14px;
-    background-color: rgba(255, 255, 255, 0.05);
+    width: 100% !important;
+    max-width: 100% !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+}
+
+[data-testid="stChatInput"] > div {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    background: linear-gradient(
+        135deg,
+        rgba(31, 15, 68, 0.95),
+        rgba(42, 15, 92, 0.95)
+    ) !important;
+
+    border: 2px solid rgba(46, 230, 230, 0.85) !important;
+    border-radius: 18px !important;
+
+    box-shadow:
+        0 0 8px rgba(46, 230, 230, 0.35),
+        0 0 24px rgba(46, 230, 230, 0.15) !important;
+
+    padding: 8px 10px !important;
+
+    min-height: 62px !important;
+
+    display: flex !important;
+    align-items: center !important;
 }
 
 [data-testid="stChatInput"] textarea {
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 12px;
-    background-color: rgba(23, 11, 51, 0.6);
-    color: #F5F3FF;
-}
+    width: 100% !important;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
 
-[data-testid="stChatInput"] textarea:focus {
-    border-color: #2EE6E6;
-    box-shadow: 0 0 0 3px rgba(46, 230, 230, 0.18);
+    color: #F5F3FF !important;
+    font-size: 16px !important;
+
+    padding: 10px 14px !important;
+    resize: none !important;
 }
 
 [data-testid="stChatInput"] textarea::placeholder {
-    color: #9E92C9;
+    color: #A99ACF !important;
+    opacity: 1 !important;
 }
+
+[data-testid="stChatInput"] button {
+    width: 46px !important;
+    height: 46px !important;
+    min-width: 46px !important;
+
+    background: rgba(46, 230, 230, 0.10) !important;
+    border: 1px solid rgba(46, 230, 230, 0.55) !important;
+    border-radius: 12px !important;
+
+    color: #2EE6E6 !important;
+}
+
+[data-testid="stChatInput"] button:hover {
+    background: rgba(46, 230, 230, 0.22) !important;
+    border-color: #2EE6E6 !important;
+
+    box-shadow:
+        0 0 10px rgba(46, 230, 230, 0.45) !important;
+}
+
+[data-testid="stChatInput"] textarea:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+[data-testid="stChatInput"]:focus-within > div {
+    border-color: #2EE6E6 !important;
+
+    box-shadow:
+        0 0 10px rgba(46, 230, 230, 0.45),
+        0 0 28px rgba(46, 230, 230, 0.18) !important;
+}
+
 
 
 /* ==============================
