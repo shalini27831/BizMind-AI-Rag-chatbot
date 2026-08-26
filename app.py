@@ -114,10 +114,6 @@ footer {
     visibility: hidden;
 }
 
-header {
-    visibility: hidden;
-}
-
 html, body, .stApp, [class*="css"] {
     font-family: 'Inter', sans-serif;
 }
