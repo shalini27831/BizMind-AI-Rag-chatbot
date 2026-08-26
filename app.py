@@ -450,7 +450,24 @@ div.stButton > button:hover {
         0 0 10px rgba(46, 230, 230, 0.45),
         0 0 28px rgba(46, 230, 230, 0.18) !important;
 }
+/* ==============================
+   CHAT INPUT BACKGROUND AREA
+   ============================== */
 
+[data-testid="stBottomBlockContainer"] {
+    background: #24104F !important;
+    padding: 12px 3% 18px 3% !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+[data-testid="stBottomBlockContainer"] > div {
+    background: transparent !important;
+}
+
+footer {
+    visibility: hidden !important;
+}
 
 
 /* ==============================
