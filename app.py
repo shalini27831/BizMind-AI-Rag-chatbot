@@ -31,7 +31,10 @@ QUICK_TOPICS = [
     ("📦 Inventory", "What is the company's approach to inventory management?"),
     ("📊 Strategy", "What is the company's overall business strategy?"),
 ]
-
+TRY_ASKING = [
+    "How can dynamic pricing improve revenue while maintaining customer demand?",
+    "What inventory and forecasting strategies can help reduce stockouts?",
+]
 
 def get_base64_image(path):
     """Read a local image and return it as a base64 string,
@@ -652,22 +655,25 @@ if not st.session_state.messages:
 
     st.markdown("**Try asking:**")
 
-    row1_col1, row1_col2 = st.columns(2)
-    row2_col1, row2_col2 = st.columns(2)
+row1_col1, row1_col2 = st.columns(2)
 
-    welcome_grid = [row1_col1, row1_col2, row2_col1, row2_col2]
+with row1_col1:
+    if st.button(
+        TRY_ASKING[0],
+        use_container_width=True,
+        key="welcome_question_1"
+    ):
+        st.session_state.pending_question = TRY_ASKING[0]
+        st.rerun()
 
-    for grid_col, (label, topic_question) in zip(welcome_grid, QUICK_TOPICS):
-
-        with grid_col:
-
-            if st.button(
-                label,
-                use_container_width=True,
-                key=f"welcome_{label}"
-            ):
-                st.session_state.pending_question = topic_question
-                st.rerun()
+with row1_col2:
+    if st.button(
+        TRY_ASKING[1],
+        use_container_width=True,
+        key="welcome_question_2"
+    ):
+        st.session_state.pending_question = TRY_ASKING[1]
+        st.rerun()
 
 
 # --------------------------------------------------
