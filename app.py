@@ -32,8 +32,8 @@ QUICK_TOPICS = [
     ("📊 Strategy", "What is the company's overall business strategy?"),
 ]
 TRY_ASKING = [
-    "How can dynamic pricing improve revenue while maintaining customer demand?",
-    "What inventory and forecasting strategies can help reduce stockouts?",
+    "What factors influence pricing decisions?",
+    "How can the business improve revenue?",
 ]
 
 def get_base64_image(path):
